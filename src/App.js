@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header/Header';
+import Home from './components/Home/Home';
+import About from './components/About/About';
 
 function App() {
   return (
     <div className=" text-primary bg-bgcolor">
-        <Header />
-        <div className='bg-black h-screen'></div>
-        <div className='bg-green-500 h-screen'></div>
+        {/* <Header /> */}
+        <Home />
+        <About />
     </div>
   );
 }
