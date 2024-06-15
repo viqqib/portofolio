@@ -3,11 +3,14 @@ import './App.css';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import About from './components/About/About';
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 
 function App() {
   return (
     <div className=" text-primary bg-bgcolor">
-        {/* <Header /> */}
+        <Header />
         <Home />
         <About />
     </div>
