@@ -5,14 +5,18 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Navbar from './components/Header/Navbar';
 
 
 function App() {
   return (
     <div className=" text-primary bg-bgcolor">
-        <Header />
+        <Navbar />
         <Home />
         <About />
+        {/* <Header />
+        <Home />
+        <About /> */}
     </div>
   );
 }
