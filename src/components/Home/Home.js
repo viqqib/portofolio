@@ -16,35 +16,50 @@ const Home = () => {
 
     let job = ["Student", "Front-End Developer","Web Developer","UI/UX Designer"]
     return(
-        <div className='h-screen w-full flex' id="home_section">
+        // <div className="bg-slate-600 lg:h-screen lg:pt-0 lg:pb-0 pt-40 pb-20 flex justify-center items-center " id="home_section">
+        //     <div className="itemcontainer py-2 bg-white flex flex-col ">
+        //         <div className="">
+        //             <img src={myphoto} className="w-custom-pic-mobile" alt="" />
+        //         </div>
+        //         <div className="">
+        //             <h1 className="main-text font-serif lg:text-9xl text-5xl lg:mt-0 mt-2">Hi, i'm Fiqqi</h1>
+        //             <h1 className="lg:my-1 mt-1 my-2 "><TypewriterComponent /></h1>
+        //             <p className="w-64">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nemo provident id odit deleniti pariatur accusantium iste fugiat dolores autem ratione sequi eaque, incidunt itaque beatae ad rerum adipisci? Aperiam?</p>
+
+        //         </div>
+        //     </div>
+        // </div>
 
 
-            <div className="flex justify-center  ">
-                <div className=" mt-40  h-custom-profbox w-3/4 flex justify-center">
+        <div className='lg:h-screen h-full lg:pt-0 md:pt-0 pt-10 pb-20 w-full flex' id="home_section">
 
-                    <div className=" flex md:flex-row flex-col justify-center md:relative w-5/6">
-                        <img src={myphoto} alt="" className="w-custom-pic-mobile md:w-custom-pic  md:absolute md:left-5 md:top-16 md:z-10"/>
-                        <div className="md:mt-24 md:ml-96 md:z-20">
-                            <h1 className="main-text font-serif md:text-9xl text-5xl md:mt-0 mt-2">Hi i'm Fiqqi</h1>
-                            <h1 className="proftext mt-1"> <TypewriterComponent /></h1>
-                            <p className="md:mt-4  md:w-5/6 md:text-lg mt-2 text-sm w-full">
+
+         
+                <div className=" lg:mt-32 md:mt-44 mt-24  h-custom-profbox w-screen flex items-center justify-center ">
+
+                    <div className="lg:ml-20 flex lg:flex-row flex-col lg:justify-center lg:relative lg:pt-0  lg:w-3/4 items-center">
+                        <img src={myphoto} alt="" className=" lg:ml-0 w-custom-pic-mobile lg:w-custom-pic  lg:absolute lg:left-3 lg:top-16 lg:z-10"/>
+                        <div className="lg:mt-24 lg:ml-96 lg:z-20 z-10 flex flex-col justify-center">
+                            <h1 className="main-text font-serif lg:text-9xl text-5xl lg:mt-0 mt-2">Hi, i'm Fiqqi</h1>
+                            <h1 className="lg:my-1 mt-1 my-2 "><TypewriterComponent /></h1>
+                            <p className="lg:mt-3 w-72 lg:w-3/4  lg:text-lg text-xs">
                                 {bio}
                             </p>
-                            <div className="mt-4 space-x-3">
+                            <div className="mt-4 space-x-5 text-2xl lg:text-4xl">
                                 <a href="https://github.com/viqqib" target="_blank" rel="noopener noreferrer" className="">
-                                <FontAwesomeIcon icon={faInstagram} size="2x" className="text-primary hover:text-maingreen duration-300" />
+                                <FontAwesomeIcon icon={faInstagram} className="text-primary hover:text-maingreen duration-300" />
                                 </a>
 
                                 <a href="https://github.com/viqqib" target="_blank" rel="noopener noreferrer" className="">
-                                <FontAwesomeIcon icon={faGithub} size="2x" className="text-primary hover:text-maingreen duration-300" />
+                                <FontAwesomeIcon icon={faGithub} className="text-primary hover:text-maingreen duration-300" />
                                 </a>
                                 
                                 <a href="https://github.com/viqqib" target="_blank" rel="noopener noreferrer" className="">
-                                <FontAwesomeIcon icon={faFacebook} size="2x" className="text-primary hover:text-maingreen duration-300" />
+                                <FontAwesomeIcon icon={faFacebook} className="text-primary hover:text-maingreen duration-300" />
                                 </a>
                             </div>
-                            <Link to="about_section" smooth={true} duration={500}>
-                                <button className="hover:bg-primary hover:text-bgcolor duration-200 bg-maingreen w-auto px-6 md:px-10 py-3 font-bold mt-3 text-sm md:text-md rounded-lg">
+                            <Link to="about_section" smooth={true} duration={800}>
+                                <button className="hover:bg-primary hover:text-bgcolor duration-200 bg-maingreen w-auto px-5 lg:px-10 lg:py-3 font-bold mt-3 text-xs py-2 lg:text-lg rounded-lg">
                                     Know Me Better
                                 </button>
                             </Link>
@@ -55,7 +70,7 @@ const Home = () => {
                 </div>
             </div>
 
-        </div>
+
 
     )
 }

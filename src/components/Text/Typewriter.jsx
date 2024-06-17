@@ -3,7 +3,8 @@ import Typewriter from 'react-typewriter-effect';
 
 const TypewriterComponent = () => {
     return (
-        <h1 className="proftext md:text-4xl font-semibold text-xl">
+        <span className="proftext lg:text-4xl font-semibold text-lg flex">
+            I'm a&nbsp;
             <Typewriter
             textStyle={{
                 fontFamily: 'Montserrat, sans-serif',
@@ -14,7 +15,6 @@ const TypewriterComponent = () => {
             multiText={[
                 'Student',
                 'Front-End Developer',
-                'Web Developer',
                 'UI/UX Designer',
             ]}
             multiTextDelay={2000}
@@ -22,7 +22,7 @@ const TypewriterComponent = () => {
             deleteSpeed={50}
             multiTextLoop
         />
-        </h1>
+        </span>
 
     );
 };

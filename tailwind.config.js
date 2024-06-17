@@ -17,7 +17,7 @@ module.exports = {
       },
       width: {
         'custom-pic': '420px',
-        'custom-pic-mobile': '270px',
+        'custom-pic-mobile': '285px',
       },
       fontFamily: {
         serif: ['"DM Serif Display"', 'serif'],

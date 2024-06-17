@@ -10,7 +10,7 @@ import Navbar from './components/Header/Navbar';
 
 function App() {
   return (
-    <div className=" text-primary bg-bgcolor">
+    <div className="text-primary bg-bgcolor">
         <Navbar />
         <Home />
         <About />
